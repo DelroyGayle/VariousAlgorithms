@@ -79,6 +79,19 @@ Start from the leftmost element and keep track of the index of smaller (or equal
 Note: Quicksort can be converted to an iterative version with the help of an auxiliary stack
 Reference: https://www.geeksforgeeks.org/quick-sort/ 
 
+# Radix Sort
+
+In computer science, radix sort is a non-comparative sorting algorithm. It avoids comparison by creating and distributing elements into buckets according to their radix. For elements with more than one significant digit, this bucketing process is repeated for each digit, while preserving the ordering of the prior step, until all digits have been considered. For this reason, radix sort has also been called bucket sort and digital sort.
+
+Radix sort can be applied to data that can be sorted lexicographically, be they integers, words, punch cards, playing cards, or the mail.
+
+## Digit Order
+
+Radix sorts can be implemented to start at either the most significant digit (MSD) or least significant digit (LSD).
+For example, with 1234, one could start with 1 (MSD) or 4 (LSD).
+
+LSD radix sorts typically use the following sorting order: short keys come before longer keys, and then keys of the same length are sorted lexicographically. This coincides with the normal order of integer representations, 
+like the sequence [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]. LSD sorts are generally stable sorts.
 
 # Selection Sort
 

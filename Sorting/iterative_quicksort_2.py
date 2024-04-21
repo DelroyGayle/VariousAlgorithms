@@ -38,7 +38,6 @@ def partition(array, low, high):
 def quicksort_iterative(array, low, high):
 	
 	# Create an auxiliary stack and push the initial values of low and high
-	arraysize = high - low + 1
 	stack = [low, high]
 	
 	# Keep processing values from the stack while it is not empty

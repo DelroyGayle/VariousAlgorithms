@@ -46,7 +46,6 @@ def quicksort(array, low, high):
         quicksort(array, partition_index + 1, high)
 
 
-# Driver code
 if __name__ == '__main__':
     array = [10, 7, 8, 0, -2, 9, -8, 1, 5]
     N = len(array)
