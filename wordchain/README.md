@@ -9,6 +9,7 @@ elephant ends with t and talk starts with t
 talk ends with k and kite starts with k
 For instance, given a list of words:
 
+```
 words = ['apple', 'orange', 'eggplant', 'pear', 'hop', 'tooth', 'zaza']
 longest_chain(words) should return:
 
@@ -26,6 +27,7 @@ words = [
 
 longest_chain(words)
 
-# ['grapes', 'starfruit', 'tomato', 'orange', 'elderberry', 'yuzu']
+['grapes', 'starfruit', 'tomato', 'orange', 'elderberry', 'yuzu']
 
-# SOURCE: https://levelup.gitconnected.com/youre-a-python-king-if-you-can-answer-these-4-very-tricky-questions-207caa22cdee
+```
+[SOURCE](https://levelup.gitconnected.com/youre-a-python-king-if-you-can-answer-these-4-very-tricky-questions-207caa22cdee)
