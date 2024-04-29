@@ -59,9 +59,21 @@ Note that the trunk of the tree will always have a height of 2.
 ```
 christmas_tree(3)
 
-
+    *
+   ***
+  *****
+    *
+    *
 
 christmas_tree(5)
+
+    *
+   ***
+  *****
+ *******
+*********
+    *
+    *
 ```
 
 7) Fibonacci Numbers
@@ -237,6 +249,9 @@ maze2 = [
 
 Write a function is_solvable(maze) that takes in a maze, and returns True if the maze if solvable and False otherwise.  
 A maze is solvable if it is possible for the player to get to X from S.  
+
+![image](https://github.com/DelroyGayle/VariousAlgorithms/assets/91061592/67187656-5060-430a-8c1a-b43429463fdd)
+
 
 18) Checking For Prime Numbers  
 A prime number is a positive integer larger than 1 that is divisible ONLY by 1 and itself.<br> Some examples of prime numbers:<br>
