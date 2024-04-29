@@ -1,11 +1,15 @@
 # My attempts to solve Liu Zuo Lin's 20 Python Problems In ONE Line!
 [Source](https://python.plainenglish.io/can-you-solve-these-20-python-problems-in-one-line-8e878a2c8b41)
 
+
+# Disclaimer
+# FOR FUN AND LAUGHTER ONLY. PLEASE DO NOT DO THIS IN PRODUCTION CODE!!! THANK YOU!
+
 I attempted all the solutions nonetheless where possible I will also show Liu Zou Lin's own solutions
 Liu Zuo Lin's 20 Problems are as follows:  
 
 1) Factorial  
-Write a function factorial(n) that takes in a positive integer n, and returns the product of 1 to n i.e. 1 * 2 * 3 * ... * n<br>
+Write a function factorial(n) that takes in a positive integer n, and returns the product of 1 to n i.e. 1 * 2 * 3 * ... * n  
 
 ```
 factorial(1)  # 1
@@ -16,7 +20,8 @@ factorial(5)  # 120
 ```
 
 2) Removing Vowels  
-Write a function remove_vowels(string) that takes in a string, and returns another string with all vowels removed.<br> Vowels refer to a, e, i, o & u.
+Write a function remove_vowels(string) that takes in a string, and returns another string with all vowels removed.  
+Vowels refer to a, e, i, o & u.  
 
 ```
 remove_vowels('apple')  # ppl
@@ -354,3 +359,13 @@ extract(data, 'videoID')
  'vid006', 'vid007', 'vid008', 'vid009', 'vid010']
 ```
 
+
+# My Approach
+
+The general approach I took was 
+1. to write a solution in JavaScript first.
+2. Convert the program to a Python version
+3. Convert the Python program to one line using semicolons
+
+
+Therefore, generally there will be both JavaScript and Python solutions to each challenge.
