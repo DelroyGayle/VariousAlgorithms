@@ -133,7 +133,8 @@ fruits = [
 ]
 ```
 
-Write a function total_cost(fruits) that takes in such a list, and calculates the total cost of fruits inside the list (price * quantity).
+Write a function total_cost(fruits) that takes in such a list, and calculates the total cost of fruits  
+inside the list (price * quantity).
 
 ```
 total_cost(fruits) # 1500*
