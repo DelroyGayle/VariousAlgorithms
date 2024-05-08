@@ -18,8 +18,8 @@ the Djikstra's shortest path algorithm to find the shortest path
 from 'start state' to 'end state'
 Source: https://levelup.gitconnected.com/youre-probably-a-excellent-programmer-if-you-can-solve-this-d78fb1ce73d3
 
-Version 1
-Solve for 3 discs
+Version 2
+Solve for 4 discs
 """
 
 
@@ -94,21 +94,40 @@ def search(state):
     return dict
 
 
+def solve(start_state, end_state):
+    dict = search(start_state)
+    steps = [end_state]
+    while True:
+        new = dict[steps[-1]]['previous']
+        if new is None:
+            break
+        steps.append(new)
+
+    for step in steps[::-1]:
+        print(step)
+
+
 start_state = ((3, 2, 1), (), ())
 
 end_state = ((), (), (3, 2, 1))
 
-dict = search(start_state)
-steps = [end_state]
-while True:
-    new = dict[steps[-1]]['previous']
-    if new is None:
-        break
-    steps.append(new)
+solve(start_state, end_state)
+print("")
 
-for step in steps[::-1]:
-    print(step)
+start_state = ((4, 3, 2, 1), (), ())
 
+end_state = ((), (), (4, 3, 2, 1))
+
+solve(start_state, end_state)
+
+# By the way, check that it is solvable for one disc
+print("")
+
+start_state = ((1,), (), ())
+
+end_state = ((), (), (1,))
+
+solve(start_state, end_state)
 """
 Output:
 
@@ -120,4 +139,24 @@ Output:
 ((1,), (2,), (3,))
 ((1,), (), (3, 2))
 ((), (), (3, 2, 1))
+
+((4, 3, 2, 1), (), ())
+((4, 3, 2), (1,), ())
+((4, 3), (1,), (2,))
+((4, 3), (), (2, 1))
+((4,), (3,), (2, 1))
+((4, 1), (3,), (2,))
+((4, 1), (3, 2), ())
+((4,), (3, 2, 1), ())
+((), (3, 2, 1), (4,))
+((), (3, 2), (4, 1))
+((2,), (3,), (4, 1))
+((2, 1), (3,), (4,))
+((2, 1), (), (4, 3))
+((2,), (1,), (4, 3))
+((), (1,), (4, 3, 2))
+((), (), (4, 3, 2, 1))
+
+((1,), (), ())
+((), (), (1,))
 """
