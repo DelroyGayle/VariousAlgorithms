@@ -3,6 +3,7 @@ Various Algorithms
 
 A collection of various algorithms and challenges
 
+* generate_base_numbers - Generate the first 'n' numbers for a particular base number using a 'queue'
 * maximum_product - Find the maximum product of two numbers in an unsorted list
 * minimum_window - Minimum Window Substring algorithm
 * one_liners - Liu Zuo Lin's 20 Python Problems
