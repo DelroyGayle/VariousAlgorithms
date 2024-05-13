@@ -1,6 +1,6 @@
-# https://leetcode.com/problems/single-number/description/
-
 """
+https://leetcode.com/problems/single-number/description/
+
 136. Single Number
 
 Given a non-empty array of integers nums,
@@ -95,6 +95,7 @@ print(solve_with_sort([2, 2, 1]))  # 1
 print(solve_with_sort([4, 1, 2, 1, 2]))  # 4
 print(solve_with_sort([1]))  # 1
 print(solve_with_sort([2,  2,  3,  4,  4]))  # 3
+print(solve_with_sort([2,  2,  -3,  -4,  -4]))  # -3
 
 print()
 
@@ -102,3 +103,4 @@ print(solve_with_xor([2, 2, 1]))  # 1
 print(solve_with_xor([4, 1, 2, 1, 2]))  # 4
 print(solve_with_xor([1]))  # 1
 print(solve_with_xor([2, 2, 3, 4, 4]))  # 3
+print(solve_with_sort([2,  2,  -3,  -4,  -4]))  # -3
