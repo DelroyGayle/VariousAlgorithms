@@ -1,4 +1,5 @@
 
+from collections import Counter
 """
 https://leetcode.com/problems/find-all-duplicates-in-an-array/description/
 
@@ -128,3 +129,8 @@ print(find_all_duplicates_2([2, 1, 2]))  # [2]
 print(find_all_duplicates_2([2, 1, 1]))  # [1]
 print(find_all_duplicates_2([4, 3, 2, 7, 8, 2, 3, 1]))  # [2, 3]
 print(find_all_duplicates_2([1, 3, 2, 1]))  # [1]
+
+a = [4, 3, 2, 7, 8, 2, 3, 1, 0]
+
+
+print(Counter(a)-Counter({*a}))
